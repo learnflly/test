@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/middle/middle",
+    "pages/classify/classify",
+    "pages/car/car",
+    "pages/mine/mine",
+    "pages/mine_myhole/mine_myhole",
+    "pages/mine_like/mine_like",
+    "pages/fankui/fankui"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#146356",
+    "navigationBarTitleText": "SHU树洞"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#979795",
+    "selectedColor": "#1c1c1b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "tabbarComponent/icon/discover.png",
+        "selectedIconPath": "tabbarComponent/icon/discover1.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "tabbarComponent/icon/favorite.png",
+        "selectedIconPath": "tabbarComponent/icon/favorite1.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "通知",
+        "iconPath": "tabbarComponent/icon/bell.png",
+        "selectedIconPath": "tabbarComponent/icon/bell1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "tabbarComponent/icon/profile.png",
+        "selectedIconPath": "tabbarComponent/icon/profile1.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "登录",
+        "iconPath": "tabbarComponent/icon/profile.png",
+        "selectedIconPath": "tabbarComponent/icon/profile1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
