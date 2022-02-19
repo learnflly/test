@@ -1,0 +1,87 @@
+<view class='divLine'></view>
+<view class='bottom_list'>
+    <view class='list_button_view'>
+      <image src='/images/shenghuo1.png' style='width:80rpx;height:80rpx'></image>
+    </view>
+   <view class='user-content1'>
+    <view class='firstline1'>
+      <view class='apart1'>
+      <view class='username1'>
+        <text>系统通知</text>
+      </view>
+      </view>
+    </view>
+    <view class='secondline'>
+      <view class='dialog1'>
+      <text>shu树洞上线啦</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='divLine'></view>
+<!--私信消息列表-->
+<scroll-view scroll-y="true" class="message-list" style="margin-top:{{navH+47}}px;" >
+  <!--示例用户1-->
+  <view class='user' bindtap='goTocontactPage'>
+  <view class='user-content'>
+    <view class='firstline'>
+      <view class='apart'>
+      <view class='username'>
+        <text>{{discussList[index].postUserName}}</text>
+      </view>
+      <view class='text_1'>
+        <text>回复了你的评论</text>
+      </view>
+    </view>
+      <view class='time'>
+        <view class='time-num'>{{discussList[index].postHeadUrl}}</view>
+      </view>
+    </view>
+    <view class="middle">
+      <text>{{discussList[index].discussTimeDay}}</text>
+    </view>
+    <view class='secondline'>
+      <view class='dialog'>
+      <text>{{discussList[index].postContext}}</text>
+      </view>
+    </view>
+  </view>
+  </view>
+<!--分割线-->
+<view class='linecut'></view>
+  <!--示例用户2-->
+  <view class='user' bindtap='goTocontactPage'>
+  <view class='user-content'>
+    <view class='firstline'>
+      <view class='apart'>
+      <view class='username'>
+        <text>凉凉凉凉</text>
+      </view>
+      <view class='text_1'>
+        <text>回复了你的评论</text>
+      </view>
+    </view>
+      <view class='time'>
+        <view class='time-num'>#43176</view>
+      </view>
+    </view>
+    <view class="middle">
+      <text>2021-12-14</text>
+    </view>
+    <view class='secondline'>
+      <view class='dialog'>
+      <text>你想要怎么拍呢？</text>
+      </view>
+    </view>
+  </view>
+  </view>
+<!--分割线-->
+<view class='linecut'></view>
+</scroll-view>
+
+<view class="dise"style="margin-top:{{navH+47}}px;height:900rpx">
+</view>
+
+<!--底部导航-->
+<tabbar tabbar="{{tabbar}}"></tabbar> 

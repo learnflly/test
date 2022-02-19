@@ -1,0 +1,202 @@
+/* pages/classify/classify.wxss */
+.UCenter-bg {
+    background-color: #146356;
+    height: 280rpx;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 3000;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.UCenter-bg .gif-wave {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 200rpx;
+    left: 0;
+    z-index: 4000;
+    mix-blend-mode: screen;
+    height: 100rpx;
+}
+
+.UCenter-bg text {
+    opacity: 0.8;
+}
+
+/* 多选框 */
+.list-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0rpx;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#0f265500;
+}
+
+.list-box .list {
+    height: 100rpx;
+    width: 40%;
+    background-color: rgba(248, 247, 247, 0.404);
+    box-shadow: 0rpx 5rpx 9rpx 0rpx rgba(79, 90, 103, 0.09);
+    border-radius: 16rpx;
+    border: 3px solid transparent;
+    transition: all 0.4s;
+    position: relative;
+    text-align: center;
+    line-height: 100rpx;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-family: Source Han Sans CN;
+    font-size: 36rpx;
+    font-weight: bold;
+    color: #0f2655;
+}
+
+.list-box .point {
+    position: absolute;
+    background: #8bc63e;
+    width: 36rpx;
+    height: 36rpx;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px 0 0 0px;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.list-box .pointtwo {
+    position: absolute;
+    background: brown;
+    width: 36rpx;
+    height: 36rpx;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px 0 0 0px;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.list-box .point image {
+    display: none;
+}
+
+.list-box .pointtwo image {
+    display: none;
+}
+
+.list.active {
+    border: 3px solid #8bc63e;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.list.activetwo {
+    border: 3px solid brown;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.list.active .list-title {
+    transition: all 0.4s;
+    color: #8bc63e;
+}
+
+.list.activetwo .list-title {
+    transition: all 0.4s;
+    color: brown;
+}
+
+.list.active .list-bold {
+    transition: all 0.4s;
+    color: #8bc63e;
+}
+
+.list.activetwo .list-bold {
+    transition: all 0.4s;
+    color: brown;
+}
+
+.list.active .point {
+    opacity: 1;
+    position: absolute;
+    background: #8bc63e;
+    width: 36rpx;
+    height: 36rpx;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px 0 0 0px;
+}
+
+.list.activetwo .pointtwo {
+    opacity: 1;
+    position: absolute;
+    background: brown;
+    width: 36rpx;
+    height: 36rpx;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px 0 0 0px;
+}
+
+.list.active .point image {
+    transition: all 0.3s;
+    display: block;
+    width: 24rpx;
+    height: 24rpx;
+    margin-top: 8rpx;
+    margin-left: 8rpx;
+}
+
+.list.activetwo .pointtwo image {
+    transition: all 0.3s;
+    display: block;
+    width: 24rpx;
+    height: 24rpx;
+    margin-top: 8rpx;
+    margin-left: 8rpx;
+}
+
+/* 导入语 */
+.choice {
+    background-color:#146356;
+    position:fixed;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Source Han Sans CN;
+    font-size: 50rpx;
+    top: 0;
+    height: 298rpx;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+    color: #fff;
+    z-index: 3000;
+}
+
+.choice text{
+    opacity: 0.9;
+}
+
+.need {
+    border-bottom: 10rpx solid #8bc63e;
+}
+
+.unneed {
+    border-bottom: 10rpx solid brown;
+}
+
+.no {
+    color: #afaeae;
+}
+
+.sure {
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200rpx;
+}

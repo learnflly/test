@@ -1,0 +1,43 @@
+  <!-- 加载 -->
+<view >
+  <!-- 时间轴为总布局 -->
+  <view class="timeLine" style=" width: 100%;">
+    <view class="on" wx:for="{{array}}" wx:key="Lsh">
+      <p class="p" style="background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAB2pJREFUeF7t1UGRpdcRhFH3YDAAM7FRiIsRiItQWEwEQBhaWmgtR+TNiKzFO7Ou6or/3PfFfP3DPwIE/lbgiw0BAn8vIBC/DgL/R0Agfh4EBOI3QOBNwP8gb262PkRAIB/y0D7zTUAgb262PkRAIB/y0D7zTUAgb262PkRAIB/y0D7zTUAgb262PkRAIB/y0D7zTUAgb27PW//813///cePH7+8/IGv7++ffv/t519fdu28CQjkze15669Avv738ge+vv/4j0Be5N53BPJu97QpkCe2syWBjOkFMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/gIZg5fnBFICpusCScVu5wUy9hfIGLw8J5ASMF0XSCp2Oy+Qsb9AxuDlOYGUgOm6QFKx23mBjP0FMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/gIZg5fnBFICpusCScVu5wUy9hfIGLw8J5ASMF0XSCp2Oy+Qsb9AxuDlOYGUgOm6QFKx23mBjP0FMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/gIZg5fnBFICpusCScVu5wUy9hfIGLw8J5ASMF0XSCp2Oy+Qsb9AxuDlOYGUgOm6QFKx23mBjP0FMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/gIZg5fnBFICpusCScVu5wUy9hfIGLw8J5ASMF0XSCp2Oy+Qsb9AxuDlOYGUgOm6QFKx23mBjP0FMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/gIZg5fnBFICpusCScVu5wUy9hfIGLw8J5ASMF0XSCp2Oy+Qsb9AxuDlOYGUgOm6QFKx23mBjP0FMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/gIZg5fnBFICpusCScVu5wUy9hfIGLw8J5ASMF0XSCp2Oy+Qsb9AxuDlOYGUgOm6QFKx23mBjP0FMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/gIZg5fnBFICpusCScVu5wUy9hfIGLw8J5ASMF0XSCp2Oy+Qsb9AxuDlOYGUgOm6QFKx23mBjP0FMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/gIZg5fnBFICpusCScVu5wUy9hfIGLw8J5ASMF0XSCp2Oy+Qsb9AxuDlOYGUgOm6QFKx23mBjP0FMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/gIZg5fnBFICpusCScVu5wUy9hfIGLw8J5ASMF0XSCp2Oy+Qsb9AxuDlOYGUgOm6QFKx23mBjP0FMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/gIZg5fnBFICpusCScVu5wUy9hfIGLw8J5ASMF0XSCp2Oy+Qsb9AxuDlOYGUgOm6QFKx23mBjP0FMgYvzwmkBEzXBZKK3c4LZOwvkDF4eU4gJWC6LpBU7HZeIGN/gYzBy3MCKQHTdYGkYrfzAhn7C2QMXp4TSAmYrgskFbudF8jYXyBj8PKcQErAdF0gqdjtvEDG/n8F8uOXl7Nf398//f7bz7++7Np5ExDIm5utDxEQyIc8tM98ExDIm5utDxEQyIc8tM98ExDIm5utDxEQyIc8tM98ExDIm5utDxEQyIc8tM98ExDIm5utDxEQyIc8tM98ExDIm5utDxEQyIc8tM98ExDIm5utDxH4E5ZMcRSAMGayAAAAAElFTkSuQmCC) no-repeat 100% 0;background-size: 36rpx 36rpx;">
+        {{item.CreateTime1}}<text class="text">{{item.CreateTime}}</text>
+        <view class="tagcard" wx:if="{{item.tag}}">{{item.tag}}</view>
+        </p>
+      <!-- 卡片背景 -->
+      <view class="card">
+        <!-- 点赞评论 -->
+        <label class="con"><text class="name"> {{item.number}} </text>
+          <text class="tooltext" style="right: 9%">{{item.thumb}}</text>
+          <text class="tooltext" style="right: 20%">{{item.ping.length}}</text>
+          <image class='toolitem' src='../../images/thumb.png' style="right: 5%"></image>
+          <image class='toolitem' src='../../images/message.png' style="right: 15%"></image>
+        </label>
+        <!-- 发帖文本内容 -->
+        <view class="content">
+          <text>{{item.content}}</text>
+        </view>
+      </view>
+      <!-- 滚动评论区 -->
+      <scroll-view class="scrollview" scroll-x="true" bindscroll="scroll">
+        <!-- 设置空白块保证左边也可以滑动,透明色 -->
+        <view class="blank" style="opacity:{{0}}"></view>
+        <block wx:for="{{item.ping}}" wx:for-item="ping" wx:key="number">
+          <view class="smallcard">
+            <label class="con"><text class="name"> {{ping.number}} </text></label>
+            <view class="contenttwo"> {{ping.content}}
+            </view>
+          </view>
+        </block>
+        <view class="blank"></view>
+      </scroll-view>
+    </view>
+
+  </view>
+  <view class="END">
+    <view>- 上次刷新位置 -</view>
+  </view>
+</view>

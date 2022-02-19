@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/middle/middle",
+    "pages/classify/classify",
+    "pages/car/car",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#146356",
+    "navigationBarTitleText": "SHU树洞"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#979795",
+    "selectedColor": "#1c1c1b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "tabbarComponent/icon/discover.png",
+        "selectedIconPath": "tabbarComponent/icon/footer-i1h.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "tabbarComponent/icon/footer-i2.png",
+        "selectedIconPath": "tabbarComponent/icon/footer-i2h.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "通知",
+        "iconPath": "tabbarComponent/icon/footer-i4.png",
+        "selectedIconPath": "tabbarComponent/icon/footer-i4h.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "tabbarComponent/icon/footer-i5.png",
+        "selectedIconPath": "tabbarComponent/icon/footer-i5h.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

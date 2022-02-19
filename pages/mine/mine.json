@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "我的",
+  "enablePullDownRefresh": true
+
+}

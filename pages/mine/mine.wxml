@@ -1,0 +1,67 @@
+<view class='UCenter-bg'>
+  <image class='userhead' src='../../images/1.jpg' mode="aspectFill"></image>
+  <image src="../../images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+
+</view>
+
+<view class='three_button_view'>
+  <view class='three_button_view_in' bindtap="discussbutton">
+    <view>
+      <image src='../../images/xinqing.png' style='width:60rpx;height:60rpx;margin-top:40rpx'></image>
+    </view>
+    <view style='margin-top:10rpx'>
+      我的树洞
+    </view>
+  </view>
+  <view class='three_button_view_in' bindtap="upbutton">
+    <view>
+      <image src='../../images/fox.png' style='width:60rpx;height:60rpx;margin-top:40rpx'></image>
+    </view>
+    <view style='margin-top:10rpx'>
+      我的关注
+    </view>
+  </view>
+
+</view>
+<view class='bottom_view'>
+  <view class='bottom_center_view'>
+    <view class='bottom_list' bindtap='handleShowModal'>
+      <view class='list_button_view'>
+        <image src='/images/shu.png' style='width:50rpx;height:50rpx'></image>
+      </view>
+      <view class='list_button_text'>
+        社区规范
+      </view>
+      <view class='list_button_jiantou'>
+        ></view>
+    </view>
+
+    <view class='bottom_list' bindtap='fan'>
+      <view class='list_button_view'>
+        <image src='/images/fa.png' style='width:50rpx;height:50rpx'></image>
+      </view>
+      <view class='list_button_text'>
+        反馈建议
+      </view>
+      <view class='list_button_jiantou'>
+        ></view>
+    </view>
+
+    <view style='width:100%;height:100rpx; align-items: center;display: flex;font-size: 30rpx;  color:rgb(0, 0, 0,0.8);'bindtap='showok'>
+      <view class='list_button_view'>
+        <image src='/images/ren.png' style='width:50rpx;height:50rpx'></image>
+      </view>
+      <view class='list_button_text' >
+        退出登录
+      </view>
+      <view class='list_button_jiantou'>
+        ></view>
+    </view>
+  </view>
+</view>
+<view>
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>
+<view class='left_red_radius' wx:if="{{replyNumber>0}}">{{replyNumber}}</view>
+<view class='center_red_radius' wx:if="{{toupNumber>0}}">{{toupNumber}}</view>
+<view class='right_red_radius' wx:if="{{chatNumber>0}}">{{chatNumber}}</view>

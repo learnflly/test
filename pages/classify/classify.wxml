@@ -1,0 +1,45 @@
+<view class='UCenter-bg'>
+<image src="../../images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+</view>
+
+<view style="background-color:#fff;height:1600rpx">
+  <!-- 导入语 -->
+  <view class="choice">
+    <text style="font-size: 38rpx;position:fixed;top:80rpx;">Hi,欢迎来到SHU树洞</text>
+    <view style="font-weight: bold;position:fixed;top:150rpx;">
+      <text>可以在这</text>
+      <text class="need" wx:if="{{choose}}">选择</text>
+      <text class="no" bindtap="need" wx:else="{{choose}}">选择</text>
+      <text style="color: #afaeae;">/</text>
+      <text class="no" bindtap="unneed" wx:if="{{choose}}">屏蔽</text>
+      <text class="unneed" wx:else="{{choose}}">屏蔽</text>
+      <text>一些tag</text>
+    </view>
+  </view>
+  <!-- 选择 -->
+  <view class="list-box" wx:if="{{choose}}">
+    <view class="list {{item.check ? 'active' : ''}}" wx:for="{{listOne}}" data-id="{{item.id}}" wx:key="index" bindtap="bindClick">
+      <view class="point">
+        <image src="/images/yes.png" mode="widthFix" />
+      </view>
+      {{item.name}}
+    </view>
+  </view>
+  <!-- 屏蔽 -->
+  <view class="list-box" wx:else="{{choose}}">
+    <view class="list {{item.check ? 'activetwo' : ''}}" wx:for="{{listOne}}" data-id="{{item.id}}" wx:key="index" bindtap="bindClick">
+      <view class="pointtwo">
+        <image src="/images/no.png" mode="widthFix" />
+      </view>
+      {{item.name}}
+    </view>
+  </view>
+  <!-- 确认 -->
+  <view class="sure">
+    <view style="background-color: #146356;border-radius:70rpx;height:80rpx;width:300rpx;display: flex;justify-content: center;align-items: center;font-family: Source Han Sans CN;font-size:40rpx; box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.3);">
+    <text style="color:#fff">确   认</text></view>
+  </view>
+  <view>
+    <tabbar tabbar="{{tabbar}}"></tabbar>
+  </view>
+</view>
